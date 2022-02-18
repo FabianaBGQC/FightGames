@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth ;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+
+    
+}
+h1{ font-size: 3em;}
+h2{font-size: 2.5em;}
+h3{font-size: 2em;}
+h4{font-size: 1.5em};
+p{font-size: 1.2em;}
+li{font-size: 1.23em;}
+
+.nav{background: #0e050f ;
+    height: 80px;
+    color: white;}
+.color1{
+    color: #84de6d ;
+}
+.color2{
+    color: #4733f2;
+}
+
+.navcontenedor{
+    display: flex;
+    height: 100%;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.navlogo{
+    width: 1.5em;
+    height: 9;
+     ;
+}
+
+.navmenu{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1.9em;
+}
+
+.enlaces{
+    text-decoration: none;
+    color: white;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+   
+}
+
+
+.enlaces::after{
+    content: "";
+    display: block;
+    background: rgb(85, 79, 163);
+    width: 90%;
+    margin-top: 3px;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path .3s;
+
+}
+
+.enlaces:hover{
+    --clippy: polygon(0 0, 100% 1%, 100% 100%, 0 100%);
+}
+
+#checkmenu{
+    display: none;
+}
+
+.checkbtn{
+    cursor: pointer;
+    display: none;
+    opacity: 0;
+}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 12px;
+    border: 0px  solid rgba(0,0,0,0.8);
+    box-shadow: 8px 8px 10px rgba(0,0,0,0.8) ;
+    color: white;
+    background-color:#f20f1e ;
+    float: left;
+
+    
+}
+button:hover{
+    background-color: #910c15;
+}
+marquee{
+    position:relative ;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color:white;
+    color:  #0e050f;
+    
+   
+}
+
+#banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center ;
+    flex-direction: column;
+    height: calc(100vh - 80px);  
+    color:white;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center center;
+}
+
+.titulo{
+    font-size: 3em;
+    color: white;
+    text-shadow: rgb(22, 19, 19) 0.1em  0.1em 0.2em;
+}
+.texto1{
+    font-size: 1.5em;
+    color: rgb(7, 6, 6);
+    text-shadow: rgba(22, 19, 19, 0.575) 0.1em  0.1em 0.2em;
+    padding: 25px;
+}
+
+h2{
+    font-size: 3.5em;
+    color:white;
+    text-shadow: rgb(22, 19, 19) 0.1em  0.1em 0.2em;
+}
+#qs{
+    display: flex;
+    padding: 150px 0px;
+    align-items: center;
+    justify-content: center;
+    text-align: center ;
+    flex-direction: column; 
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center center;
+}
+#quienesomos .contenedor2{
+    text-align: center;
+    padding: 130px 40px;
+    max-width: 1300px;
+    margin: auto;
+}
+h3{
+    font-size: 2.2em;
+    color:rgb(49, 48, 48);
+    text-shadow: rgba(22, 19, 19, 0.637) 0.1em  0.1em 0.1em;
+}
+
+#juegos{
+    display: flex;
+    padding: 150px 0px;
+    align-items: center;
+    justify-content: center;
+    text-align: center ;
+    flex-direction: column; 
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/fondo3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center center;
+}
+.ubi{font-size: 2.5em;
+    color:rgba(64, 190, 85, 0.945);
+    text-shadow: rgb(0, 0, 0) 0.1em  0.1em 0.2em;
+    text-align: center;
+}
+.btitulo{
+    text-align: center;
+    margin-top: 5px;
+}
+.contextoo{
+    text-indent: 10%;
+    text-align: justify-all;
+    margin-top: 2px;
+    
+    
+}
+#ofitext .contenedor3{
+    padding: 130px 10px;
+    max-width: 1300px;
+    margin: auto;
+    background-color: #1f1b27  ;
+    color: white;
+}
+.juego1{
+    background-color: #351d66b0  ;
+    text-shadow: rgb(0, 0, 0) 0.1em  0.1em 0.2em;
+    padding: 60px 0px;
+    border-radius: 2% 2%;
+}
+
+.juego2{
+    background-color: #a50c9175  ;
+    text-shadow: rgb(0, 0, 0) 0.1em  0.1em 0.2em;
+    padding: 60px 0px;
+    border-radius: 2% 2%;
+}
+
+
+.juego3{
+    background-color: #3124aa93  ;
+    text-shadow: rgb(0, 0, 0) 0.1em  0.1em 0.2em;
+    padding: 60px 0px;
+    border-radius: 2% 2%;
+}
+#j1{
+    border-radius: 5%;
+    width: 250px;
+    height: 200px;
+    float: right;
+    margin-top: -30px;
+    border: 0px 15px;
+    margin-right: 15px;
+} 
+#j2{
+    border-radius: 5%;
+    width: 250px;
+    height: 200px;
+    float: left;
+    margin-top: -35px;
+    border: 0px 15px;
+    margin-left: 15px;
+} 
+#j3{
+
+    border-radius: 5%;
+    width: 250px;
+    height: 180px;
+    float: right;
+    margin-top: -60px;
+    border: 0px 15px;
+    margin-right: 15px;
+}
+
+#contexto1,#contexto3{
+  
+    font-size: 1em;
+    padding: 0px 300px;
+   
+}
+
+#contexto2{
+    font-size: 1em;
+    padding: 0px 300px;
+
+}
+
+#idvalores{
+    display: flex;
+    padding: 150px 0px;
+    align-items: center;
+    justify-content: center;
+    text-align: center ;
+    flex-direction: column; 
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/fondo4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center center;
+}
+.ttvalor{
+    text-align: center;
+    color:rgb(32, 25, 54);
+    text-shadow: rgba(22, 19, 19, 0.767) 0.1em  0.1em 0.1em;
+
+}
+
+#v2{
+   
+    width: 480px;
+    height: 250px;
+    float: center;
+    margin-top: -200px;
+    border: 0px 15px;
+    margin-left: 50px;
+   
+}
+
+#convalor .contenedorva{
+
+    text-align: center;
+    padding: 130px 40px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.textva{
+    font-size: 1.5em;
+    text-shadow: rgba(22, 19, 19, 0.486) 0.1em  0.1em 0.1em;
+}
+
+.puntosva{
+    font-size: 1em;
+    text-shadow: rgba(22, 19, 19, 0.37) 0.1em  0.1em 0.1em;
+    padding: 0px 50px;
+}
+
+#evo{
+    display: flex;
+    padding: 50px 0px;
+    font-size: 1.3em;
+    align-items: center;
+    justify-content: center;
+    text-align: center ;
+    background-color:#0e050f;
+    color: white;
+    text-shadow: rgb(22, 19, 19) 0.1em  0.1em 0.2em;
+}
+
+#bannerevo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center ;
+    flex-direction: column;
+    color:white;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.685),rgba(0, 0, 0, 0.726)),url(../img/fondo5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center center;
+}
+
+.historia{
+    margin-top: 40px;
+    color:white;
+    text-shadow: rgb(22, 19, 19) 0.1em  0.1em 0.2em;
+}
+
+.textevo{
+    text-indent: 10%;
+    font-size: 1.5em;
+    padding: 0px 120px;
+    text-align: left;
+}
+
+#bannercon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center ;
+    flex-direction: column;
+    color:white;
+    padding: 120px 40px;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.685),rgba(0, 0, 0, 0.726)),url(../img/fondo6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center center;
+}
+
+.contac{
+    margin-top: 100px;
+    font-size: 2.8em;
+    color:white;
+    text-shadow: rgb(0, 0, 0) 0.2em  0.2em 0.2em;
+}
+
+.textco{
+    margin-top: 100px;
+    font-size: 1.9em;
+    color:white;
+    text-shadow: rgb(0, 0, 0) 0.1em  0.1em 0.2em;
+
+}
+
+.puntosco{
+    font-size: 1.3em;
+    color:rgb(252, 249, 249);
+    text-shadow: rgb(0, 0, 0) 0.1em  0.1em 0.2em;
+    text-align: left;
+    padding: 0px 45px;
+}
+
+#iconosp{
+    background-color: #0e050f;
+    padding: 10px 200px;
+
+}
+.icon{
+    position: relative;
+     align-items: center;
+     display: flex;
+     cursor: pointer;
+
+ }
+
+
+
+
+footer{
+    font-size: 0.8em;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0e050f;
+    color: rgb(117, 117, 117); 
+}
+
+@media(min-width: 1500px){
+    .quien{
+        font-size: 4em;
+        color:white;
+        text-shadow: rgb(22, 19, 19) 0.1em  0.1em 0.2em;
+    }
+    .somos{
+        font-size: 3em;
+        color:rgb(49, 48, 48);
+        text-shadow: rgb(22, 19, 19) 0.1em  0.1em 0.1em;
+    }
+    #quienesomos .contenedor2{
+        text-align: center;
+        font-size: 1.2em;
+        padding: 130px 150px;
+        margin:auto;
+    }
+    #img1{
+        width: 600px;
+        height: 400px;
+    }
+    #img2{
+        width: 600px;
+        height: 400px;
+    }
+    
+   
+    footer{
+        font-size: 0.9em;
+    }
+
+}
+
+@media(max-width:1500px){
+
+    .titulo{
+        font-size: 3,3em;
+    }
+
+    
+    .navlogo{
+        font-size: 2em;
+
+    }
+   
+    .navmenu{
+        display: grid;
+        grid-auto-flow: column;
+        gap: 0.5em;
+        font-size: 1em;
+    }
+
+    
+
+
+   
+    
+
+}
+
+@media(max-width:896px){
+   
+    .navlogo{
+        font-size: 2.2em;
+
+    }
+   
+    .navmenu{
+        font-size: 0.69em;
+        display: grid;
+        grid-auto-flow: column;
+        gap: 0.5em;
+        font-size: 0.em;
+    }
+    #j1, #j2, #j3{
+        display:  none;
+        opacity: 0;
+    }
+
+    #contexto1,#contexto2, #contexto3{
+        text-align: center;
+        font-size: 1,6em;
+        padding: 40px 0px;
+    }
+}
+
+
+@media(max-width: 713px){
+    .titulo{
+        font-size: 2em;
+    }
+
+
+    .checkbtn{
+        display: block;
+        opacity: 1;
+    }
+
+    .navmenu{
+    position: absolute;
+    top:  80px;
+    bottom:0;
+    background: #2f4058;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    clip-path: circle(0 at center);
+    transition: clip-path 1s ease-in-out ;
+    z-index: 10;
+}
+
+#checkmenu:checked ~ .navmenu{
+    
+    clip-path: circle(100% at center);
+}
+
+#quienesomos .contenedor2{
+    text-align: center;
+    font-size: 0.9;
+    padding: 130px 30px;
+    margin:auto;
+}
+
+#img1{
+    width: 325px;
+    height: 200px;
+}
+
+#img2{
+    width: 325px;
+    height: 200px;
+}
+
+#v2{
+   
+    width: 300px;
+    height: 150px;
+    float: center;
+    margin-top: -2000px;
+    margin-left: 5%;
+   
+}
+
+
+
+}
+
+
+
